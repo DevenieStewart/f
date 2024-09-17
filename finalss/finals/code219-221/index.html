@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pic/images (2).jpg" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="styles.css">
+    <title>Factura</title>
+</head>
+<body>
+    <main class="container">
+        <div class="header">
+            <div class="left-header">
+                <h3>Sistema de Facturacion</h3>
+            </div>
+            <div class="right-header">
+                <h3>Factura No 1.</h3>
+                <h3 id="numfactura">0000</h3>
+            </div>
+        </div>
+        <form class="form-container" action="guardarfactura.php" method="post">
+            <input type="hidden" id="numfacturar" name="numfacturar">
+            <div class="table-container">
+                <table class="tabla">
+                    <tr class="ajaxTitle">
+                        <th>Id-Producto</th>
+                        <th>Cantidad</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="totals">
+                <div>
+                    <button id="btnNueva" class="btn-teal" type="button">Nueva Factura</button>
+                    <input id="guarfact" name="guarfact" class="btn-teal" type="submit" value="Guardar Factura">
+                </div>
+                <div class="totals-right">
+                    <div>
+                        <label for="sutotalfact">Subtotal:</label>
+                        <input type="text" id="sutotalfact" name="sutotalfact" class="input-field">
+                    </div>
+                    <div>
+                        <label for="impuestofact">IVA:</label>
+                        <input type="text" id="impuestofact" name="impuestofact" class="input-field">
+                    </div>
+                    <div>
+                        <label for="todpagarfact">Total a pagar:</label>
+                        <input type="text" id="todpagarfact" name="todpagarfact" class="input-field">
+                    </div>
+                </div>
+            </div>
+            <div class="product-client">
+                <div id="datosproducto" class="product">
+                    <fieldset>
+                        <legend>Seleccionar Producto</legend>
+                        <div>
+                            <label for="">Codigo</label>
+                            <input type="text" id="codpro" class="input-field">
+                        </div>
+                        <div>
+                            <label for="">Cantidad</label>
+                            <input type="text" id="cantpro" class="input-field">
+                        </div>
+                        <div>
+                            <label for="">Descripcion:</label>
+                            <input type="text" id="despro" class="input-field">
+                        </div>
+                        <div>
+                            <label for="">Precio</label>
+                            <input type="text" id="prepro" class="input-field">
+                        </div>
+                        <div>
+                            <label for="">Total</label>
+                            <input type="text" id="toppro" class="input-field">
+                        </div>
+                    </fieldset>
+                    <div>
+                        <button id="btn2" class="btn-blue" type="button">Agregar producto</button>
+                    </div>
+                </div>
+                <div id="Datoscliente" class="client">
+                    <fieldset>
+                        <legend>Seleccionar Cliente</legend>
+                        <div>
+                            <label for="">Codigo:</label>
+                            <input type="text" id="cod_cliente" name="cod_cliente" class="input-field">
+                        </div>
+                        <div>
+                            <label for="">Nombre del cliente:</label>
+                            <input type="text" id="nomcliente" class="input-field">
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* Reset básico para asegurar una apariencia consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Color de fondo general */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 80%;
+    margin: auto;
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.left-header {
+    background-color: #4CAF50; /* Verde pastel */
+    color: #ffffff;
+    padding: 10px;
+    width: 70%;
+}
+
+.right-header {
+    background-color: #00BCD4; /* Azul pastel */
+    color: #ffffff;
+    padding: 10px;
+    width: 28%;
+    text-align: center;
+}
+
+/* Contenedor del formulario y los elementos de entrada */
+.form-container {
+    margin-top: 20px;
+}
+
+.input-field {
+    background-color: #f5f5dc; /* Color pastel para los campos de entrada */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilo de los botones */
+.btn-teal {
+    background-color: #4CAF50; /* Verde pastel */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.btn-teal:hover {
+    background-color: #388E3C; /* Verde más oscuro en hover */
+}
+
+.btn-blue {
+    background-color: #2196F3; /* Azul pastel */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-blue:hover {
+    background-color: #1976D2; /* Azul más oscuro en hover */
+}
+
+/* Estilo de la tabla */
+.table-container {
+    margin-bottom: 20px;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fafafa; /* Color de fondo para la tabla */
+}
+
+.tabla th, .tabla td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.tabla th {
+    background-color: #e0e0e0; /* Color de fondo para los encabezados */
+    color: #555;
+}
+
+/* Estilo de los totales */
+.totals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.totals-right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.totals-right div {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo para los campos del producto y cliente */
+.product-client {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.product,
+.client {
+    width: 48%;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f5f5dc; /* Color pastel para los campos de entrada */
+    font-size: 14px;
+    color: #333;
+}

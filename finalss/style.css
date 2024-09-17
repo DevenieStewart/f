@@ -1,0 +1,129 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+* {
+    box-sizing: border-box; 
+}
+
+
+img {
+    border-radius: 8px;
+    width: 60%;
+    padding: 1px;
+    display: block;
+    margin-top: 0;
+    transition: transform 0.3s ease, width 0.3s ease;
+}
+
+
+img:hover {
+    transform: scale(1.5); 
+    width: 30px; 
+}
+
+body{
+    background: #040505;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+}
+.hero h1{
+    font-size: 80px;
+    background-color: #ffffff;
+}
+.hero p{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #2c92ae;
+}
+nav {
+    background: #4fb7c9;
+    height: 80px;
+    box-shadow: rgba(173, 205, 237, 0.2) 0px 8px 24px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+nav a{
+    flex: 1;
+    height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f7f0f0;
+    transition: .2s ease-in-out all;
+    font-weight: 500;
+}
+
+nav a:hover{
+    background: #95c3d2;
+}
+
+nav .indicator{
+    width: 0px;
+    height: 7px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 0;
+    transition: .3s ease-out all;
+}
+.seccion{
+    min-height: 100vh;
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion .card{
+    background: #c6dcad;
+    height: 90%;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.seccion h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.seccion p{
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+.seccion img{
+    width: 100px;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px){
+    nav a{
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    nav a{
+        font-size: 12px;
+    }
+}
+    

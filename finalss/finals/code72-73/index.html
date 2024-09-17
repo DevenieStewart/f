@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pic/images (2).jpg" type="image/png" sizes="16x16">
+    <title>Ediciones Fares</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ediciones Fares</h1>
+        </header>
+        <nav>
+            <a href="index.html">Principal</a>
+            <a href="nosotros.html">Nosotros</a>
+            <div>
+                <button type="button">Libros</button>
+                <ul>
+                    <li><a href="#">Educación Básica</a></li>
+                    <li><a href="#">I Bachillerato técnico profesional en informática</a></li>
+                    <li><a href="#">II Bachillerato técnico profesional en informática</a></li>
+                    <li><a href="#">III Bachillerato técnico profesional en informática</a></li>
+                    <li><a href="#">I Bachillerato en ciencias y humanidades</a></li>
+                    <li><a href="#">II Bachillerato en ciencias y humanidades</a></li>
+                    <li><a href="btp-informatica.html">Todo BTP informática</a></li>
+                </ul>
+            </div>
+            <a href="alumn.html">Estudiantes</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <section>
+            <h2>Contáctenos</h2>
+            <form action="prueba.php" method="post">
+                <p>
+                    <label for="nombre">Nombres</label>
+                    <input id="nombre" name="nombre" type="text" required>
+                </p>
+                <p>
+                    <label for="apellido">Apellidos</label>
+                    <input id="apellido" name="apellido" type="text" required>
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+                </p>
+                <div>
+                    <p>
+                        <input id="hombre" type="radio" name="genero" value="hombre" checked>
+                        <label for="hombre">Hombre</label>
+                    </p>
+                    <p>
+                        <input id="mujer" type="radio" name="genero" value="mujer">
+                        <label for="mujer">Mujer</label>
+                    </p>
+                </div>
+                <div>
+                    <h3>Libros de mi interés</h3>
+                    <p>
+                        <input id="edbas" name="edbas" type="checkbox" value="Educación Básica" checked>
+                        <label for="edbas">Educación Básica</label>
+                    </p>
+                    <p>
+                        <input id="i_btp" name="i_btp" type="checkbox" value="I BTP en informática">
+                        <label for="i_btp">I BTP en informática</label>
+                    </p>
+                    <p>
+                        <input id="ii_btp" name="ii_btp" type="checkbox" value="II BTP en informática">
+                        <label for="ii_btp">II BTP en informática</label>
+                    </p>
+                    <p>
+                        <input id="iii_btp" name="iii_btp" type="checkbox" value="III BTP en informática">
+                        <label for="iii_btp">III BTP en informática</label>
+                    </p>
+                </div>
+                <button type="submit" name="enviar">Enviar datos</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
